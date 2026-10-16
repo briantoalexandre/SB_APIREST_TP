@@ -26,7 +26,17 @@ entity "**saison**" as saison #goldenrod {
     **num** : INT
     **nom** : VARCHAR(255)
     --
-    **<<FK>> serie_id** : INT
+    **<<FK>> series_id** : INT
+}
+
+entity "**episode**" as episode #Yellow {
+    **<<PK>> id** : INT
+    **num** : INT
+    **titre** : VARCHAR(255)
+    **duree** : INT
+    **database** : DATE
+    --
+    **<<FK>> saison_id** : INT
 }
 
 
@@ -35,6 +45,7 @@ entity "**saison**" as saison #goldenrod {
 serie ||--o{ saison : "series_id:id"
 serie ||--o{ genre_series : "series_id:id"
 genre ||--o{ genre_series : "genre_id:id"
+saison ||--|{ episode : "saison_id:id"
 
 
 ' COMMENTAIRES :

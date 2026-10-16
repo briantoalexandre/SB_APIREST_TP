@@ -1,0 +1,32 @@
+{
+  "nom": "Arcane",
+  "lienImage": "",
+  "vo": "anglais",
+  "premise": ".",
+  "genres": [
+    {
+      "id": 1,
+      "nom": "Drame"
+    },
+    {
+      "id": 2,
+      "nom": "Crime"
+    }
+  ],
+  "saisons": [
+    {
+      "id": 1,
+      "num": 1,
+      "nom": "Saison 1",
+      "annee": 2021,
+      "nombreEpisode": 5
+    },
+    {
+      "id": 2,
+      "num": 2,
+      "nom": "Saison 2",
+      "annee": 2024,
+      "nombreEpisode": 5
+    }
+  ]
+}
